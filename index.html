@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="成长工作台">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='28' fill='%232f6fed'/%3E%3Ctext x='64' y='84' font-size='72' text-anchor='middle' fill='white'%3E🌐%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.webmanifest">
+<title>我的成长工作台 · 医学检验女孩的 S 型逆袭</title>
+<style>:root{--blue:#3b82f6;--blue-deep:#1e5fd0;--blue-soft:#e8f1ff;--blue-bg:#eef4ff;--gold:#e0a85a;--green:#22a06b;--red:#e35d6a;--ink:#1f2a3d;--muted:#6b7c93;--line:#d6e4ff;--card:#ffffff;--shadow:0 8px 26px rgba(31,95,208,.12);}*{box-sizing:border-box;margin:0;padding:0}body{font-family:"PingFang SC","Microsoft YaHei",-apple-system,"Segoe UI",system-ui,sans-serif;background:linear-gradient(160deg,#eef4ff 0%,#f2f7ff 45%,#eaf3ff 100%);color:var(--ink);min-height:100vh;font-size:14px;line-height:1.6;-webkit-text-size-adjust:100%}.topnav{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;gap:7px;align-items:center;padding:9px 14px;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.brand{font-weight:800;color:var(--blue-deep);font-size:15px;margin-right:6px;white-space:nowrap}.brand small{font-weight:400;color:var(--muted);font-size:10px;display:block}.nav-btn{border:none;border-radius:20px;background:var(--blue-soft);color:var(--blue-deep);padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;transition:.15s;white-space:nowrap}.nav-btn:hover{background:#d7e6ff}.nav-btn.active{background:linear-gradient(135deg,var(--blue),var(--blue-deep));color:#fff;box-shadow:var(--shadow)}.main{max-width:1180px;margin:0 auto;padding:18px 16px 60px}.topbar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}.stat{flex:1;min-width:120px;background:var(--card);border-radius:16px;padding:13px 15px;box-shadow:var(--shadow);border:1px solid var(--line)}.stat .k{font-size:12px;color:var(--muted)}.stat .v{font-size:21px;font-weight:800;margin-top:2px}.v.blue{color:var(--blue-deep)}.v.green{color:var(--green)}.v.gold{color:var(--gold)}.v.red{color:var(--red)}.v.pink{color:#d6499a}.panel{display:none;animation:fade .25s}.panel.show{display:block}@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}.card{background:var(--card);border-radius:18px;padding:18px;box-shadow:var(--shadow);border:1px solid var(--line);margin-bottom:16px}.card h2{font-size:16.5px;color:var(--blue-deep);margin-bottom:4px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}.card .sub{font-size:12px;color:var(--muted);margin-bottom:12px}.card h3{font-size:14px;margin:13px 0 7px;color:var(--ink)}.row{display:flex;gap:9px;flex-wrap:wrap;align-items:center}input,select,textarea{font-family:inherit;font-size:13px;padding:8px 10px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);outline:none;max-width:100%}input:focus,select:focus,textarea:focus{border-color:var(--blue)}button.b{padding:8px 15px;border:none;border-radius:10px;background:linear-gradient(135deg,var(--blue),var(--blue-deep));color:#fff;font-weight:700;cursor:pointer;font-size:13px;box-shadow:var(--shadow);transition:.15s}button.b:hover{filter:brightness(1.06)}button.b.ghost{background:#fff;color:var(--blue-deep);border:1.5px solid var(--blue)}button.b.sm{padding:5px 11px;font-size:12px}button.b.green{background:linear-gradient(135deg,#34c98a,var(--green))}button.b.gold{background:linear-gradient(135deg,#f0c074,var(--gold))}button.b.red{background:linear-gradient(135deg,#f08fa0,var(--red))}.tag{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700;margin:2px}.tag.blue{background:var(--blue-soft);color:var(--blue-deep)}.tag.gold{background:#fff4e0;color:var(--gold)}.tag.green{background:#e3f7ee;color:var(--green)}.tag.red{background:#ffe9ec;color:var(--red)}.tag.gray{background:#eef1f6;color:var(--muted)}.list-item{background:#f7faff;border:1px solid var(--line);border-radius:12px;padding:11px 13px;margin:8px 0;display:flex;gap:10px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}.list-item .body{flex:1 1 180px;min-width:140px}.list-item .tt{font-weight:700;word-break:normal;overflow-wrap:anywhere}.list-item .meta{font-size:12px;color:var(--muted);margin-top:3px;word-break:normal;overflow-wrap:anywhere}.done{opacity:.5;text-decoration:line-through}.chk{width:22px;height:22px;border-radius:7px;border:2px solid var(--blue);cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff;background:#fff;margin-top:1px}.chk.on{background:var(--blue)}table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-weight:700;font-size:12px}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.tab{padding:6px 14px;border-radius:20px;background:#fff;border:1.5px solid var(--line);cursor:pointer;font-size:12.5px;font-weight:700;color:var(--muted)}.tab.on{background:var(--blue);color:#fff;border-color:var(--blue)}.note{background:#eef6ff;border-left:4px solid var(--blue);padding:9px 13px;border-radius:0 10px 10px 0;font-size:12.5px;color:#2b4a7a;margin:10px 0}.warn{background:#fff1f0;border-left:4px solid var(--red);padding:9px 13px;border-radius:0 10px 10px 0;font-size:12.5px;color:var(--red);margin:10px 0}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}.mcard{background:#f7faff;border:1px solid var(--line);border-radius:14px;padding:13px;display:flex;flex-direction:column;gap:7px}.mcard .tt{font-weight:800;font-size:14px;color:var(--blue-deep);line-height:1.4}.mcard .ds{font-size:12.5px;color:var(--ink);flex:1}.mcard .acts{display:flex;gap:7px;margin-top:2px}.mcard .acts button{flex:1;padding:6px 0;font-size:12px;border-radius:9px;border:none;cursor:pointer;font-weight:700;color:#fff}.btn-dy{background:linear-gradient(135deg,#25f4ee,#00bcd4)}.btn-bl{background:linear-gradient(135deg,#fb7299,#ff5c8a)}.flex2{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:680px){.flex2{grid-template-columns:1fr}.main{padding:14px 11px 50px}}.progress{height:11px;background:var(--blue-soft);border-radius:20px;overflow:hidden;margin:6px 0}.progress>i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--blue-deep));border-radius:20px;transition:.4s}.modal-mask{position:fixed;inset:0;background:rgba(31,42,61,.45);display:none;align-items:center;justify-content:center;z-index:99;padding:16px}.modal-mask.show{display:flex}.modal{background:#fff;border-radius:18px;padding:20px;width:min(460px,94vw);box-shadow:0 20px 60px rgba(0,0,0,.22);max-height:88vh;overflow:auto}.modal h3{margin-bottom:12px;color:var(--blue-deep)}.modal .field{margin:10px 0}.modal label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}.modal .row{margin-top:14px;justify-content:flex-end}.small{font-size:11.5px;color:var(--muted)}hr{border:none;border-top:1px dashed var(--line);margin:11px 0}.bulk{width:100%;min-height:62px;margin-top:8px;font-family:inherit}</style>
+</head>
+<body>
+<nav class="topnav" id="topnav">
+<div class="brand">🌐 成长工作台<small>医学检验女孩 · S 型逆袭</small></div>
+<button class="nav-btn active" data-sec="overview">概览</button>
+<button class="nav-btn" data-sec="daily">每日计划</button>
+<button class="nav-btn" data-sec="weekly">每周计划</button>
+<button class="nav-btn" data-sec="topic">选题素材</button>
+<button class="nav-btn" data-sec="remix">爆款二创</button>
+<button class="nav-btn" data-sec="review">内容复盘</button>
+<button class="nav-btn" data-sec="account">记账日记</button>
+<button class="nav-btn" data-sec="love">恋爱日记</button>
+<button class="nav-btn" data-sec="invest">投资动向</button>
+</nav>
+<main class="main">
+<section class="panel show" id="overview">
+<div class="topbar" id="stats"></div>
+<div class="card">
+<h2>🔄 每日素材源（GitHub Gist 自动推送）</h2>
+<div class="sub">每天 8 点我自动抓取抖音/全网热榜 + 你指定的微信专辑文章，AI 改写成「10 条选题灵感 + 10 条二创角度」推送到公开 Gist，网页默认读取。</div>
+<div class="row">
+<input id="gistUrl" placeholder="粘贴你的 Gist 地址或 ID（如 https://gist.github.com/xxx/abcd）" style="flex:1;min-width:220px">
+<button class="b sm" onclick="saveGist()">保存</button>
+<button class="b ghost sm" onclick="refreshGist()">🔄 刷新读取</button>
+</div>
+<div class="small" id="gistInfo" style="margin-top:7px"></div>
+<details style="margin-top:9px">
+<summary class="small">或手动粘贴 feed JSON（格式见下）一次性导入</summary>
+<textarea id="gistPaste" class="bulk" placeholder='{"date":"2026-07-27","topics":[...],"remix":[...]}'></textarea>
+<button class="b sm" onclick="importGistPaste()">导入</button>
+</details>
+</div>
+<div class="card">
+<h2>🌟 模块互联</h2>
+<div class="flex2">
+<div>
+<p class="small">① <b>每周计划</b> 结算 → 按完成率加 <b>旅游基金</b>（底金 500 可改）。</p>
+<p class="small">② <b>每日计划</b> 任务完成可「兑换奖励」→ 自动记一笔到 <b>记账日记</b>。</p>
+<p class="small">③ <b>恋爱日记</b> 花销 → 一键同步成 <b>记账日记·恋爱支出</b>。</p>
+</div>
+<div>
+<p class="small">④ <b>选题素材 / 爆款二创</b> 来自每天 8 点自动推送的 Gist，带抖音/B站唤起按钮。</p>
+<p class="small">⑤ <b>内容复盘</b> 记录你每条视频的播放/赞/评/转 + 亮点/问题/优化，越复盘越准。</p>
+</div>
+</div>
+</div>
+<div class="card">
+<h2>✅ 今日速览</h2>
+<div id="ovDaily"></div>
+<hr>
+<div id="ovWeek"></div>
+</div>
+</section>
+<section class="panel" id="daily">
+<div class="card">
+<h2>🕐 固定作息</h2>
+<div class="sub">上班 7:30–11:30 / 14:30–18:30，通勤 15 分钟，中午午睡。可改。</div>
+<div id="routineList"></div>
+<div class="row" style="margin-top:9px">
+<input id="rtTime" placeholder="时间" style="width:90px">
+<input id="rtText" placeholder="做什么" style="flex:1">
+<button class="b sm" onclick="addRoutine()">+ 加</button>
+</div>
+</div>
+<div class="card">
+<h2>✅ 每日计划 · 进度条 + 勾选清单</h2>
+<div class="sub">勾完一项进度条就涨。奖励可选，完成后「兑换」自动入账记账。</div>
+<div id="dpProgress"></div>
+<div id="dpList"></div>
+<div class="row" style="margin-top:9px">
+<input id="dpName" placeholder="任务名，如 喝满 2L 水" style="flex:1">
+<input id="dpReward" placeholder="奖励(可选)，如 奶茶 ¥18" style="width:170px">
+<button class="b sm" onclick="addDailyPlan()">+ 加任务</button>
+<button class="b ghost sm" onclick="resetDailyPlan()">🌙 重置</button>
+</div>
+</div>
+</section>
+<section class="panel" id="weekly">
+<div class="card">
+<h2>📅 每周计划打卡</h2>
+<div class="sub">按"周"记，不绑具体哪天。可任意加减、自定义次数/时长。</div>
+<div class="row" style="margin-bottom:12px">
+<span class="small">当前周：</span>
+<select id="wkSel" onchange="switchWeek()"></select>
+<button class="b ghost sm" onclick="newWeek()">＋ 新周</button>
+<button class="b ghost sm" onclick="settleWeek()">🏖️ 结算→旅游基金</button>
+<button class="b ghost sm" onclick="exportWeek()">⬇️ 备份</button>
+<button class="b ghost sm" onclick="importWeek()">⬆️ 导入</button>
+<input type="file" id="impFile" accept="application/json" style="display:none" onchange="doImport(event)">
+</div>
+<div id="wkProgress"></div>
+<div id="wkCats"></div>
+<div class="row" style="margin-top:12px;border-top:1px dashed var(--line);padding-top:12px">
+<select id="ntCat"></select>
+<input id="ntName" placeholder="任务名，如 Python 学习">
+<select id="ntType"><option value="check">打卡</option><option value="count">次数</option><option value="duration">时长</option></select>
+<input id="ntGoal" placeholder="目标" style="width:70px" value="1">
+<input id="ntUnit" placeholder="单位" style="width:60px" value="次">
+<button class="b sm" onclick="addWeekTask()">+ 加</button>
+</div>
+<textarea id="wkReview" rows="2" style="width:100%;margin-top:12px" onchange="saveReview()" placeholder="本周小结/复盘"></textarea>
+</div>
+</section>
+<section class="panel" id="topic">
+<div class="card">
+<h2>🎯 选题素材（每天 10 条 · 来自 Gist）</h2>
+<div class="sub" id="topicSub">每天 8 点自动更新。带标题 / 标签 / 说明，一键唤起抖音或 B 站。</div>
+<div class="row" style="margin-bottom:10px">
+<button class="b ghost sm" onclick="refreshGist()">🔄 刷新 Gist</button>
+<span class="small" id="topicDate"></span>
+</div>
+<div class="grid" id="topicGrid"></div>
+</div>
+</section>
+<section class="panel" id="remix">
+<div class="card">
+<h2>🔥 爆款热点视频二创（每天 10 条 · 来自 Gist）</h2>
+<div class="sub" id="remixSub">每天推「热点 + 改编角度」，贴合你的减脂记录赛道，一键唤起 App 跟拍。</div>
+<div class="row" style="margin-bottom:10px">
+<button class="b ghost sm" onclick="refreshGist()">🔄 刷新 Gist</button>
+<span class="small" id="remixDate"></span>
+</div>
+<div class="grid" id="remixGrid"></div>
+</div>
+</section>
+<section class="panel" id="review">
+<div class="card">
+<h2>📊 内容复盘</h2>
+<div class="sub">每条视频记下 播放/点赞/评论/转发 + 亮点/问题/优化。复盘越多，下条越准。</div>
+<div class="row" style="margin-bottom:10px">
+<input id="rvDate" type="date" style="width:140px">
+<input id="rvTitle" placeholder="视频标题/主题" style="flex:1">
+</div>
+<div class="row" style="margin-bottom:10px">
+<input id="rvPlay" type="number" placeholder="播放" style="width:90px">
+<input id="rvLike" type="number" placeholder="点赞" style="width:90px">
+<input id="rvCmt" type="number" placeholder="评论" style="width:90px">
+<input id="rvShare" type="number" placeholder="转发" style="width:90px">
+</div>
+<input id="rvHi" placeholder="亮点（哪里做得好）" style="width:100%;margin-bottom:8px">
+<input id="rvPr" placeholder="问题（哪里不够）" style="width:100%;margin-bottom:8px">
+<input id="rvOp" placeholder="优化（下次怎么改）" style="width:100%;margin-bottom:8px">
+<button class="b sm" onclick="addReview()">+ 记录这条</button>
+<div id="reviewList"></div>
+</div>
+</section>
+<section class="panel" id="account">
+<div class="card">
+<h2>💰 记账日记</h2>
+<div class="sub">收入 / 支出 / 恋爱支出，底部存钱计划与旅游基金。</div>
+<div class="row" style="margin-bottom:10px">
+<select id="acType"><option value="expense">支出</option><option value="love">恋爱支出</option><option value="income">收入</option></select>
+<input id="acCat" placeholder="分类" style="width:110px">
+<input id="acAmt" type="number" placeholder="金额" style="width:85px">
+<input id="acNote" placeholder="备注" style="flex:1">
+<button class="b sm" onclick="addAccount()">+ 记</button>
+</div>
+<div id="acSummary" class="row" style="margin-bottom:8px"></div>
+<div style="max-height:280px;overflow:auto">
+<table><thead><tr><th>日期</th><th>类型</th><th>分类</th><th>金额</th><th>备注</th><th></th></tr></thead>
+<tbody id="acBody"></tbody></table>
+</div>
+</div>
+<div class="flex2">
+<div class="card">
+<h2>🏖️ 旅游基金</h2>
+<div class="sub">底金 500 + 每周结算累加。</div>
+<div class="row"><span>底金：¥<b id="tfBase"></b></span><input id="tfBaseEdit" type="number" style="width:80px" onchange="setTfBase()"></div>
+<div class="row" style="margin-top:7px"><span>每周满完成奖励：¥</span><input id="tfPer" type="number" style="width:70px" onchange="setTfPer()"></div>
+<hr>
+<div style="font-size:28px;font-weight:800;color:var(--gold)">¥ <span id="tfTotal"></span></div>
+<div class="small">已加成 ¥<span id="tfExtra"></span>（<span id="tfWeeks"></span> 次结算）</div>
+</div>
+<div class="card">
+<h2>🎯 存钱计划</h2>
+<div class="row">
+<input id="spName" placeholder="计划名" style="width:140px">
+<input id="spGoal" type="number" placeholder="目标¥" style="width:85px">
+<input id="spNow" type="number" placeholder="已存¥" style="width:75px">
+<button class="b sm" onclick="addSave()">+ 加</button>
+</div>
+<div id="spList"></div>
+</div>
+</div>
+</section>
+<section class="panel" id="love">
+<div class="card">
+<h2>💕 恋爱日记</h2>
+<div class="sub">记录日常，花销一键同步到记账·恋爱支出。</div>
+<div class="row" style="margin-bottom:10px">
+<input id="lvDate" type="date" style="width:140px">
+<select id="lvMood"><option>😊 开心</option><option>🥰 甜蜜</option><option>😌 平静</option><option>😤 小吵</option><option>🤔 思考</option><option>😢 低落</option></select>
+<input id="lvText" placeholder="今天和 TA 的故事…" style="flex:1">
+</div>
+<div class="row" style="margin-bottom:10px">
+<input id="lvCost" type="number" placeholder="花费¥(可选)" style="width:130px">
+<input id="lvCostNote" placeholder="花在啥" style="width:130px">
+<button class="b sm" onclick="addLove()">+ 写</button>
+<button class="b gold sm" onclick="loveToAccount()">💰 同步记账</button>
+</div>
+<div id="loveList"></div>
+</div>
+</section>
+<section class="panel" id="invest">
+<div class="card">
+<h2>📈 投资动向（黄金/股票/基金）</h2>
+<div class="sub">手动记录每日盘面，长期看趋势。</div>
+<div class="tabs" id="invTabs">
+<div class="tab on" data-it="gold">🥇 黄金</div>
+<div class="tab" data-it="stock">📊 股票</div>
+<div class="tab" data-it="fund">💹 基金</div>
+</div>
+<div id="invBody"></div>
+<div class="row" style="margin-top:11px">
+<input id="ivName" placeholder="名称/代码" style="width:120px">
+<input id="ivPrice" placeholder="价格" style="width:95px">
+<input id="ivChg" placeholder="涨跌%" style="width:85px">
+<input id="ivNote" placeholder="备注/判断" style="flex:1">
+<button class="b sm" onclick="addInvest()">+ 记</button>
+</div>
+<div class="warn">⚠️ 仅为信息收集与学习，不构成任何投资建议。</div>
+</div>
+</section>
+</main>
+<div class="modal-mask" id="mask"><div class="modal" id="modal"></div></div>
+<script>const KEY="workbench_v2";const TODAY=()=>new Date().toISOString().slice(0,10);const uid=()=>Date.now()+"_"+Math.random().toString(36).slice(2,7);const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));const kw=s=>encodeURIComponent(String(s==null?"":s).slice(0,30));const Store=(function(){try{localStorage.setItem("__wb_t","1");localStorage.removeItem("__wb_t");return localStorage;}catch(e){var m={};return{getItem:function(k){return k in m?m[k]:null;},setItem:function(k,v){m[k]=String(v);},removeItem:function(k){delete m[k];}};}})();const EMBED={"topics":[{"title":"减脂100天打卡第1天：真实普通女生体脂率记录","tags":["减脂记录","真实打卡"],"desc":"不出镜、只晒体脂秤数字和日常吃练，陪伴型最稳","douyin":"减脂100天打卡","bili":"减脂打卡vlog"},{"title":"164cm60kg但体脂高？软脂肪怎么刷","tags":["体脂率","小基数"],"desc":"讲清体重正常但体脂高的困局，引出刷脂思路","douyin":"体脂率高怎么减","bili":"体脂率科普"},{"title":"检验科女孩的下班减脂日常：医院上班也能练","tags":["上班族减脂","检验科"],"desc":"打工人视角的可复制日常，差异化人设","douyin":"上班族怎么减脂","bili":"打工人减脂"},{"title":"S型身材养成：臀腿+核心几个居家动作","tags":["S型身材","翘臀"],"desc":"针对软脂肪的塑形动作，一周3-4次","douyin":"S型身材训练","bili":"居家翘臀训练"},{"title":"减脂期怎么吃：高蛋白低卡一日三餐实拍","tags":["减脂餐","低卡"],"desc":"医院食堂/外卖也能选的低卡思路","douyin":"减脂餐教程","bili":"减脂三餐"},{"title":"不熬夜真的会瘦：我的睡眠减脂实验","tags":["睡眠减脂","习惯"],"desc":"记录早睡早起对身体和体重的影响","douyin":"熬夜会胖吗","bili":"睡眠与减脂"},{"title":"新手怕器械？居家无器械刷脂动作合集","tags":["居家运动","新手"],"desc":"0基础跟练，先建立习惯再加量","douyin":"居家减脂运动","bili":"无器械运动"},{"title":"体脂秤怎么看：除了体重还要盯这3个数","tags":["体脂秤","数据"],"desc":"教看体脂率/肌肉量/水分，避免被体重骗","douyin":"体脂秤怎么看","bili":"体脂秤科普"},{"title":"医学生/检验人的副业探索：AI视频能赚钱吗","tags":["副业","AI视频"],"desc":"结合专业背景谈自媒体副业可行路径","douyin":"普通人副业","bili":"AI视频教程"},{"title":"减脂遇到平台期怎么办：我踩过的坑","tags":["平台期","避坑"],"desc":"真实复盘平台期应对，降低焦虑","douyin":"减脂平台期","bili":"减脂避坑"}],"remix":[{"hot":"全网都在打卡100天挑战","angle":"换成『检验科女孩减脂100天』人设，每天放体脂秤数字对比","douyin":"100天挑战","bili":"100天挑战"},{"hot":"周末宅家也想动","angle":"结合上班累、周末在家跟练15分钟，强调『不打鸡血可持续』","douyin":"周末居家运动","bili":"周末运动"},{"hot":"高蛋白减脂餐爆火","angle":"做『打工人低卡餐』系列，用食堂/外卖也能选的思路","douyin":"减脂餐","bili":"减脂餐"},{"hot":"身材焦虑话题","angle":"反向输出：不追求白幼瘦，记录真实软脂肪到S型的健康变化","douyin":"身材焦虑","bili":"身材管理"},{"hot":"AI一键生成视频","angle":"演示用即梦/可灵做减脂记录vlog，降低更新成本","douyin":"AI生成视频","bili":"AI视频"},{"hot":"医学生/规培生日常","angle":"蹭医学标签但落点在『下班后普通女孩减脂』，做差异化","douyin":"医学生日常","bili":"医学生"},{"hot":"体脂率比体重重要","angle":"做系列：同体重不同体脂对比，科普软脂肪","douyin":"体脂率","bili":"体脂率"},{"hot":"早起打卡","angle":"改成『7:30上班前的晨间仪式』，真实可复制","douyin":"早起打卡","bili":"早起"},{"hot":"副业搞钱","angle":"讲检验人转IVD/自媒体的真实路径，带一点变现思考","douyin":"副业搞钱","bili":"副业"},{"hot":"情侣一起减脂","angle":"有对象做『俩人互相监督减脂』，没对象做『一个人也要好好吃练』","douyin":"情侣减脂","bili":"情侣健身"}]};let S=load();function load(){try{const d=JSON.parse(Store.getItem(KEY));if(d&&d.weekPlan)return d;}catch(e){}return def();}function save(){try{Store.setItem(KEY,JSON.stringify(S));}catch(e){}}function def(){const wk={};wk["1"]={tasks:[{id:uid(),cat:"考证·Python",name:"Python 学习/刷题",type:"duration",goal:300,unit:"分钟",val:0,hint:"12月考证"},{id:uid(),cat:"考证·Python",name:"IVD 行业资料阅读",type:"duration",goal:60,unit:"分钟",val:0,hint:""},{id:uid(),cat:"健康·减脂",name:"运动(刷脂练S型)",type:"count",goal:3,unit:"次",val:0,hint:"臀腿+核心"},{id:uid(),cat:"健康·减脂",name:"控制饮食/记录餐",type:"count",goal:5,unit:"天",val:0,hint:"高蛋白低卡"},{id:uid(),cat:"自媒体",name:"减肥记录号内容",type:"count",goal:2,unit:"条",val:0,hint:"真实记录"},{id:uid(),cat:"我的计划",name:"阅读/复盘当日",type:"check",goal:1,unit:"次",val:0,hint:""}],review:""};return{weekPlan:{weeks:wk,cur:"1"},routine:[{id:uid(),time:"07:00",text:"起床+温水"},{id:uid(),time:"07:15",text:"拉伸/称体脂"},{id:uid(),time:"07:30-11:30",text:"上班(检验科)"},{id:uid(),time:"12:00-13:00",text:"午饭+午睡"},{id:uid(),time:"14:30-18:30",text:"上班(检验科)"},{id:uid(),time:"19:00",text:"晚饭(低卡高蛋白)"},{id:uid(),time:"20:00-21:00",text:"运动/Python 轮替"},{id:uid(),time:"22:30",text:"护肤+不熬夜"}],dailyPlan:[{id:uid(),name:"喝水 2L",reward:"奶茶 ¥18",done:false},{id:uid(),name:"不熬夜 23:30 前睡",reward:"周末电影 ¥35",done:false},{id:uid(),name:"记录今日三餐",reward:"小零食 ¥10",done:false}],topic:[],remix:[],review:[],account:[],travelFund:{base:500,per:50,extra:0,weeks:0},saves:[],love:[],invest:{gold:[{id:uid(),name:"黄金基础价",price:"885.1 元/克",chg:"-0.6%",note:"国际约4020美元，短期承压",d:"2026-07-26"}],stock:[{id:uid(),name:"A股盘面",price:"—",chg:"",note:"大盘震荡，个股分化",d:"2026-07-26"}],fund:[{id:uid(),name:"基金(待补充)",price:"—",chg:"",note:"关注宽基/黄金ETF",d:"2026-07-26"}]},gist:{url:"",date:""}};}document.querySelectorAll(".nav-btn").forEach(b=>b.onclick=()=>{document.querySelectorAll(".nav-btn").forEach(x=>x.classList.remove("active"));b.classList.add("active");const sec=b.dataset.sec;document.querySelectorAll(".panel").forEach(p=>p.classList.remove("show"));document.getElementById(sec).classList.add("show");({overview:renderOverview,daily:renderDaily,weekly:renderWeek,account:renderAccount,love:renderLove,invest:renderInvest,topic:renderTopic,remix:renderRemix,review:renderReview}[sec]||(()=>{}))();});document.querySelectorAll("#invTabs .tab").forEach(t=>t.onclick=()=>{document.querySelectorAll("#invTabs .tab").forEach(x=>x.classList.remove("on"));t.classList.add("on");invTab=t.dataset.it;renderInvest();});let mediaTab="douyin",invTab="gold";function renderStats(){const inc=S.account.filter(a=>a.type==="income").reduce((s,a)=>s+a.amt,0);const exp=S.account.filter(a=>a.type==="expense"||a.type==="love").reduce((s,a)=>s+a.amt,0);const tf=S.travelFund.base+S.travelFund.extra;const dp=S.dailyPlan.filter(t=>t.done).length;const w=getWeek();const wd=w?w.tasks.filter(t=>isDone(t)).length:0;const wt=w?w.tasks.length:0;document.getElementById("stats").innerHTML=`
+<div class="stat"><div class="k">💰 净收支</div><div class="v ${inc-exp>=0?'green':'red'}">¥${(inc-exp).toFixed(0)}</div></div>
+<div class="stat"><div class="k">🏖️ 旅游基金</div><div class="v gold">¥${tf}</div></div>
+<div class="stat"><div class="k">✅ 今日计划</div><div class="v blue">${dp}/${S.dailyPlan.length}</div></div>
+<div class="stat"><div class="k">📅 本周计划</div><div class="v blue">${wd}/${wt}</div></div>`;}if(!S.topic||!S.topic.length){S.topic=(EMBED.topics||[]).map(function(x){return{id:uid(),title:x.title,tags:x.tags||[],desc:x.desc||"",douyin:x.douyin||"",bili:x.bili||""};});}if(!S.remix||!S.remix.length){S.remix=(EMBED.remix||[]).map(function(x){return{id:uid(),hot:x.hot,angle:x.angle||"",douyin:x.douyin||"",bili:x.bili||""};});}function renderOverview(){renderStats();const dp=S.dailyPlan;const d=dp.filter(t=>t.done).length;document.getElementById("ovDaily").innerHTML="<h3>✅ 每日计划</h3>"+`<div class="progress"><i style="width:${dp.length?d/dp.length*100:0}%"></i></div>`+`<div class="small">${d}/${dp.length} 完成 · 去「每日计划」勾选</div>`;const w=getWeek();const ov=document.getElementById("ovWeek");if(!w){ov.innerHTML="<h3>📅 本周计划</h3><p class='small'>去「每周计划」</p>";return;}const done=w.tasks.filter(t=>isDone(t)).length;ov.innerHTML=`<h3>📅 本周计划（第 ${S.weekPlan.cur} 周）</h3>
+<div class="progress"><i style="width:${w.tasks.length?done/w.tasks.length*100:0}%"></i></div>
+<div class="small">${done}/${w.tasks.length} 达标</div>`;if(S.gist.url||DEFAULT_GIST)document.getElementById("gistInfo").innerHTML="✅ 已配置 Gist，打开自动读取 · 数据源："+(S.gist.date||"—");else document.getElementById("gistInfo").innerHTML="未配置 Gist，可手动粘贴导入。";}function renderDaily(){document.getElementById("routineList").innerHTML=S.routine.map(r=>`
+<div class="list-item"><div class="body"><div class="tt">🕐 ${esc(r.time)}</div><div class="meta">${esc(r.text)}</div></div>
+<button class="b ghost sm" onclick="editRoutine('${r.id}')">改</button><button class="b red sm" onclick="delRoutine('${r.id}')">删</button></div>`).join("");const dp=S.dailyPlan;const d=dp.filter(t=>t.done).length;document.getElementById("dpProgress").innerHTML=`<div class="progress"><i style="width:${dp.length?d/dp.length*100:0}%"></i></div><div class="small">${d}/${dp.length} 完成</div>`;document.getElementById("dpList").innerHTML=dp.map(t=>`
+<div class="list-item"><div class="chk ${t.done?'on':''}" onclick="toggleDP('${t.id}')">${t.done?'✓':''}</div>
+<div class="body"><div class="tt ${t.done?'done':''}">${esc(t.name)}</div><div class="meta">${t.reward?('奖励：'+esc(t.reward)):''} ${t.done?'<span class=\'tag blue\'>已得</span>':''}</div></div>
+<button class="b sm" onclick="claimDP('${t.id}')">兑换</button>
+<button class="b ghost sm" onclick="editDP('${t.id}')">改</button><button class="b red sm" onclick="delDP('${t.id}')">删</button></div>`).join("");}function addRoutine(){const t=rtTime.value.trim(),x=rtText.value.trim();if(!x)return;S.routine.push({id:uid(),time:t||"--:--",text:x});rtTime.value="";rtText.value="";save();renderDaily();}function editRoutine(id){const r=S.routine.find(x=>x.id===id);if(!r)return;openModal(`<h3>编辑作息</h3><div class="field"><label>时间</label><input id="m_t" value="${esc(r.time)}"></div>
+<div class="field"><label>内容</label><input id="m_x" value="${esc(r.text)}"></div>
+<div class="row"><button class="b ghost" onclick="closeModal()">取消</button><button class="b" onclick="saveRoutine('${id}')">保存</button></div>`);}function saveRoutine(id){const r=S.routine.find(x=>x.id===id);r.time=m_t.value;r.text=m_x.value;save();closeModal();renderDaily();}function delRoutine(id){S.routine=S.routine.filter(x=>x.id!==id);save();renderDaily();}function addDailyPlan(){const n=dpName.value.trim(),rw=dpReward.value.trim();if(!n)return;S.dailyPlan.push({id:uid(),name:n,reward:rw,done:false});dpName.value="";dpReward.value="";save();renderDaily();renderOverview();}function toggleDP(id){const t=S.dailyPlan.find(x=>x.id===id);t.done=!t.done;save();renderDaily();renderOverview();}function claimDP(id){const t=S.dailyPlan.find(x=>x.id===id);if(!t.done){alert("先勾选完成再兑换～");return;}let amt=0;const m=(t.reward||"").match(/¥\s*(\d+(\.\d+)?)/);if(m)amt=parseFloat(m[1]);S.account.push({id:uid(),type:"expense",cat:"每日奖励",amt:amt,note:"✅ "+t.name+" 奖励："+t.reward,date:TODAY()});save();renderDaily();renderAccount();renderOverview();alert("🎉 已记入记账："+(amt?("¥"+amt):t.reward));}function editDP(id){const t=S.dailyPlan.find(x=>x.id===id);openModal(`<h3>编辑任务</h3><div class="field"><label>任务名</label><input id="m_n" value="${esc(t.name)}"></div>
+<div class="field"><label>奖励</label><input id="m_r" value="${esc(t.reward||'')}"></div>
+<div class="row"><button class="b ghost" onclick="closeModal()">取消</button><button class="b" onclick="saveDP('${id}')">保存</button></div>`);}function saveDP(id){const t=S.dailyPlan.find(x=>x.id===id);t.name=m_n.value;t.reward=m_r.value;save();closeModal();renderDaily();}function delDP(id){S.dailyPlan=S.dailyPlan.filter(x=>x.id!==id);save();renderDaily();renderOverview();}function resetDailyPlan(){S.dailyPlan.forEach(t=>t.done=false);save();renderDaily();renderOverview();}function getWeek(){return S.weekPlan.weeks[S.weekPlan.cur];}function isDone(t){return t.type==="check"?t.val>=1:t.val>=t.goal;}function ensureSel(){const sel=wkSel;sel.innerHTML="";Object.keys(S.weekPlan.weeks).sort((a,b)=>a-b).forEach(k=>{const o=document.createElement("option");o.value=k;o.textContent="第 "+k+" 周";if(k===S.weekPlan.cur)o.selected=true;sel.appendChild(o);});}function switchWeek(){S.weekPlan.cur=wkSel.value;save();renderWeek();}function newWeek(){const ks=Object.keys(S.weekPlan.weeks).map(Number);const n=Math.max(0,...ks)+1;S.weekPlan.weeks[n]={tasks:[],review:""};S.weekPlan.cur=String(n);save();renderWeek();}function renderWeek(){ensureSel();const w=getWeek();const cats={};w.tasks.forEach(t=>(cats[t.cat]=cats[t.cat]||[]).push(t));const done=w.tasks.filter(t=>isDone(t)).length;document.getElementById("wkProgress").innerHTML=`<div class="progress"><i style="width:${w.tasks.length?done/w.tasks.length*100:0}%"></i></div><div class="small">第 ${S.weekPlan.cur} 周：${done}/${w.tasks.length} 达标</div>`;document.getElementById("wkCats").innerHTML=Object.keys(cats).map(c=>`
+<h3>${esc(c)} <span class="tag blue">${cats[c].filter(t=>isDone(t)).length}/${cats[c].length}</span></h3>`+cats[c].map(taskRow).join("")).join("")||"<p class='small'>本周还没任务，下面加一个</p>";const nc=ntCat;if(!nc.dataset.fill){nc.innerHTML=Object.keys(cats).map(c=>`<option>${esc(c)}</option>`).join("")+`<option value="__new">+ 新分类</option>`;nc.dataset.fill="1";}wkReview.value=w.review||"";}function taskRow(t){let ctrl;if(t.type==="check")ctrl=`<div class="chk ${t.val>=1?'on':''}" onclick="bump('${t.id}',1)">${t.val>=1?'✓':''}</div>`;else ctrl=`<div class="row"><button class="b ghost sm" onclick="bump('${t.id}',-${t.type==='duration'?10:1})">−</button>
+<b style="min-width:58px;text-align:center">${t.val}/${t.goal}${t.unit}</b>
+<button class="b ghost sm" onclick="bump('${t.id}',${t.type==='duration'?10:1})">＋</button></div>`;return`<div class="list-item"><div class="body"><div class="tt ${isDone(t)?'done':''}">${esc(t.name)}</div>
+<div class="meta">${t.hint?esc(t.hint):''} ${t.type!=='check'?('· 目标 '+t.goal+t.unit):''}</div></div>
+${ctrl}<button class="b ghost sm" onclick="editTask('${t.id}')">改</button><button class="b red sm" onclick="delTask('${t.id}')">删</button></div>`;}function bump(id,d){const t=getWeek().tasks.find(x=>x.id===id);t.val=Math.max(0,t.val+d);save();renderWeek();renderOverview();}function addWeekTask(){let c=ntCat.value;if(c==="__new")c=prompt("新分类名：")||"我的计划";const name=ntName.value.trim();if(!name)return;getWeek().tasks.push({id:uid(),cat:c,name,type:ntType.value,goal:parseInt(ntGoal.value)||1,unit:ntUnit.value||"次",val:0,hint:""});ntName.value="";ntCat.dataset.fill="";save();renderWeek();renderOverview();}function editTask(id){const t=getWeek().tasks.find(x=>x.id===id);openModal(`<h3>编辑任务</h3><div class="field"><label>分类</label><input id="e_c" value="${esc(t.cat)}"></div>
+<div class="field"><label>名称</label><input id="e_n" value="${esc(t.name)}"></div>
+<div class="field"><label>类型</label><select id="e_t"><option value="check"${t.type==='check'?' selected':''}>打卡</option><option value="count"${t.type==='count'?' selected':''}>次数</option><option value="duration"${t.type==='duration'?' selected':''}>时长</option></select></div>
+<div class="field"><label>目标值</label><input id="e_g" type="number" value="${t.goal}"></div>
+<div class="field"><label>单位</label><input id="e_u" value="${esc(t.unit)}"></div>
+<div class="field"><label>提示</label><input id="e_h" value="${esc(t.hint||'')}"></div>
+<div class="row"><button class="b ghost" onclick="closeModal()">取消</button><button class="b" onclick="saveTask('${id}')">保存</button></div>`);}function saveTask(id){const t=getWeek().tasks.find(x=>x.id===id);t.cat=e_c.value;t.name=e_n.value;t.type=e_t.value;t.goal=parseInt(e_g.value)||1;t.unit=e_u.value;t.hint=e_h.value;save();closeModal();renderWeek();renderOverview();}function delTask(id){const w=getWeek();w.tasks=w.tasks.filter(x=>x.id!==id);save();renderWeek();renderOverview();}function saveReview(){getWeek().review=wkReview.value;save();}function settleWeek(){const w=getWeek();if(!w||!w.tasks.length){alert("本周还没任务");return;}const done=w.tasks.filter(t=>isDone(t)).length;const rate=done/w.tasks.length;const add=Math.round(S.travelFund.per*rate);S.travelFund.extra+=add;S.travelFund.weeks+=1;save();renderWeek();renderAccount();renderOverview();alert(`🏖️ 本周完成率 ${(rate*100).toFixed(0)}%，旅游基金 +¥${add}（累计 ¥${S.travelFund.base+S.travelFund.extra}）`);}function exportWeek(){const b=new Blob([JSON.stringify(S.weekPlan)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="周计划备份.json";a.click();}function importWeek(){impFile.click();}function doImport(ev){const f=ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(d&&d.weeks){S.weekPlan=d;save();renderWeek();renderOverview();alert("导入成功");}else alert("格式不对");}catch(e){alert("解析失败");}};r.readAsText(f);ev.target.value="";}function renderAccount(){const inc=S.account.filter(a=>a.type==="income").reduce((s,a)=>s+a.amt,0);const exp=S.account.filter(a=>a.type==="expense"||a.type==="love").reduce((s,a)=>s+a.amt,0);const love=S.account.filter(a=>a.type==="love").reduce((s,a)=>s+a.amt,0);document.getElementById("acSummary").innerHTML=`<span class="tag green">收入 ¥${inc.toFixed(0)}</span><span class="tag red">支出 ¥${exp.toFixed(0)}</span><span class="tag pink">恋爱 ¥${love.toFixed(0)}</span><span class="tag blue">净 ¥${(inc-exp).toFixed(0)}</span>`;document.getElementById("acBody").innerHTML=S.account.slice().reverse().map(a=>`
+<tr><td>${a.date}</td><td><span class="tag ${a.type==='income'?'green':a.type==='love'?'pink':'red'}">${a.type==='income'?'收入':a.type==='love'?'恋爱':'支出'}</span></td>
+<td>${esc(a.cat)}</td><td style="color:${a.type==='income'?'var(--green)':'var(--red)'}">${a.type==='income'?'+':'-'}¥${a.amt}</td>
+<td>${esc(a.note||'')}</td><td><button class="b red sm" onclick="delAccount('${a.id}')">删</button></td></tr>`).join("")||`<tr><td colspan="6" class="small">还没记账</td></tr>`;const tf=S.travelFund;tfBase.textContent=tf.base;tfBaseEdit.value=tf.base;tfPer.value=tf.per;tfTotal.textContent=tf.base+tf.extra;tfExtra.textContent=tf.extra;tfWeeks.textContent=tf.weeks;document.getElementById("spList").innerHTML=S.saves.map(s=>{const p=s.goal>0?Math.min(100,s.now/s.goal*100):0;return`<div class="list-item"><div class="body"><div class="tt">${esc(s.name)}</div><div class="progress"><i style="width:${p}%"></i></div><div class="meta">¥${s.now} / ¥${s.goal}（${p.toFixed(0)}%）</div></div>
+<button class="b ghost sm" onclick="addSaveNow('${s.id}')">+存</button><button class="b red sm" onclick="delSave('${s.id}')">删</button></div>`;}).join("")||"<p class='small'>还没存钱计划</p>";}function addAccount(){const type=acType.value,cat=acCat.value.trim(),amt=parseFloat(acAmt.value),note=acNote.value.trim();if(!amt||amt<=0){alert("金额填一下");return;}S.account.push({id:uid(),type,cat:cat||(type==="income"?"收入":type==="love"?"恋爱":"支出"),amt,note,date:TODAY()});acCat.value="";acAmt.value="";acNote.value="";save();renderAccount();renderStats();}function delAccount(id){S.account=S.account.filter(a=>a.id!==id);save();renderAccount();renderStats();}function setTfBase(){S.travelFund.base=parseFloat(tfBaseEdit.value)||0;save();renderAccount();renderStats();}function setTfPer(){S.travelFund.per=parseFloat(tfPer.value)||0;save();renderAccount();}function addSave(){const name=spName.value.trim(),goal=parseFloat(spGoal.value)||0,now=parseFloat(spNow.value)||0;if(!name)return;S.saves.push({id:uid(),name,goal,now});spName.value="";spGoal.value="";spNow.value="";save();renderAccount();}function addSaveNow(id){const s=S.saves.find(x=>x.id===id);const v=prompt("这次存多少？");if(v==null)return;s.now+=parseFloat(v)||0;save();renderAccount();}function delSave(id){S.saves=S.saves.filter(x=>x.id!==id);save();renderAccount();}function renderLove(){document.getElementById("loveList").innerHTML=S.love.slice().reverse().map(l=>`
+<div class="list-item"><div class="body"><div class="tt">${l.mood} ${l.date}</div><div class="meta">${esc(l.text)}${l.cost?(' · 💸 ¥'+l.cost+(l.costNote?'('+esc(l.costNote)+')':'')):''}</div></div>
+<button class="b red sm" onclick="delLove('${l.id}')">删</button></div>`).join("")||"<p class='small'>还没记录</p>";}function addLove(){const date=lvDate.value||TODAY(),mood=lvMood.value,text=lvText.value.trim();if(!text){alert("写点什么");return;}const cost=parseFloat(lvCost.value)||0,costNote=lvCostNote.value.trim();S.love.push({id:uid(),date,mood,text,cost,costNote});lvDate.value="";lvText.value="";lvCost.value="";lvCostNote.value="";save();renderLove();}function loveToAccount(){const l=S.love[S.love.length-1];if(!l||!l.cost){alert("最近一笔没花费，先填『本次花费』再写一笔");return;}S.account.push({id:uid(),type:"love",cat:"恋爱",amt:l.cost,note:"💕 "+l.date+" "+l.text.slice(0,20)+(l.costNote?("("+l.costNote+")"):""),date:l.date});save();renderAccount();renderLove();renderStats();alert("💰 已同步记账（恋爱 ¥"+l.cost+"）");}function delLove(id){S.love=S.love.filter(x=>x.id!==id);save();renderLove();}function renderInvest(){const arr=S.invest[invTab]||[];document.getElementById("invBody").innerHTML=arr.slice().reverse().map(m=>`
+<div class="list-item"><div class="body"><div class="tt">${esc(m.name)} ${m.chg?('<span class="tag '+(m.chg.indexOf('-')>=0?'red':'green')+'">'+esc(m.chg)+'</span>'):''}</div>
+<div class="meta">💲 ${esc(m.price||'')} · ${esc(m.note||'')} · 📅 ${m.d||''}</div></div>
+<button class="b red sm" onclick="delInvest('${m.id}')">删</button></div>`).join("")||"<p class='small'>暂无</p>";}function addInvest(){const name=ivName.value.trim();if(!name)return;(S.invest[invTab]=S.invest[invTab]||[]).push({id:uid(),name,price:ivPrice.value.trim(),chg:ivChg.value.trim(),note:ivNote.value.trim(),d:TODAY()});ivName.value="";ivPrice.value="";ivChg.value="";ivNote.value="";save();renderInvest();}function delInvest(id){S.invest[invTab]=S.invest[invTab].filter(x=>x.id!==id);save();renderInvest();}function renderTopic(){document.getElementById("topicGrid").innerHTML=S.topic.map((t,i)=>`
+<div class="mcard"><div class="tt">${i+1}. ${esc(t.title)}</div>
+<div>${(t.tags||[]).map(x=>`<span class="tag blue">${esc(x)}</span>`).join("")}</div>
+<div class="ds">${esc(t.desc||'')}</div>
+<div class="acts"><button class="btn-dy" onclick="goDy('${esc(t.douyin||t.title)}')">抖音</button><button class="btn-bl" onclick="goBl('${esc(t.bili||t.title)}')">B站</button></div>
+<button class="b ghost sm" onclick="delTopic('${t.id}')">删除</button></div>`).join("")||"<p class='small'>暂无，去概览刷新 Gist 或手动导入</p>";document.getElementById("topicDate").textContent=S.gist.date?("数据源："+S.gist.date):"";}function renderRemix(){document.getElementById("remixGrid").innerHTML=S.remix.map((t,i)=>`
+<div class="mcard"><div class="tt">${i+1}. 🔥 ${esc(t.hot)}</div>
+<div class="ds"><b>改编角度：</b>${esc(t.angle||'')}</div>
+<div class="acts"><button class="btn-dy" onclick="goDy('${esc(t.douyin||t.hot)}')">抖音</button><button class="btn-bl" onclick="goBl('${esc(t.bili||t.hot)}')">B站</button></div>
+<button class="b ghost sm" onclick="delRemix('${t.id}')">删除</button></div>`).join("")||"<p class='small'>暂无，去概览刷新 Gist 或手动导入</p>";document.getElementById("remixDate").textContent=S.gist.date?("数据源："+S.gist.date):"";}function goDy(k){openApp("snssdk1128://search?keyword="+kw(k),"https://www.douyin.com/search/"+kw(k));}function goBl(k){openApp("bilibili://search?keyword="+kw(k),"https://search.bilibili.com/all?keyword="+kw(k));}function openApp(scheme,web){const t=Date.now();try{location.href=scheme;}catch(e){}setTimeout(()=>{if(Date.now()-t<1600)window.open(web,"_blank");},1100);}const DEFAULT_GIST="https://gist.github.com/liu716529rr-maker/316c1a078294b8712b073494cab81e7a";function gistId(){const u=(S.gist.url||DEFAULT_GIST||"").trim();if(!u)return"";const m=u.match(/([0-9a-f]{20,})/i);return m?m[1]:u;}function applyFeed(j){if(!j)return false;if(Array.isArray(j.topics))S.topic=j.topics.map(x=>({id:uid(),title:x.title,tags:x.tags||[],desc:x.desc||"",douyin:x.douyin||"",bili:x.bili||""}));if(Array.isArray(j.remix))S.remix=j.remix.map(x=>({id:uid(),hot:x.hot,angle:x.angle||"",douyin:x.douyin||"",bili:x.bili||""}));S.gist.date=j.date||TODAY();save();renderTopic();renderRemix();return true;}function refreshGist(){const id=gistId();if(!id){alert("先在概览粘贴 Gist 地址并保存");return;}document.getElementById("gistInfo").textContent="读取中…";fetch("https://api.github.com/gists/"+id).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(j=>{const f=j.files&&(j.files["workbench_feed.json"]||Object.values(j.files)[0]);if(!f)throw new Error("无 feed 文件");if(applyFeed(JSON.parse(f.content))){document.getElementById("gistInfo").textContent="✅ 已读取 Gist，数据源："+S.gist.date;document.getElementById("topicDate").textContent="数据源："+S.gist.date;document.getElementById("remixDate").textContent="数据源："+S.gist.date;}}).catch(e=>{document.getElementById("gistInfo").textContent="❌ 读取失败："+e.message+"（可手动粘贴导入）";});}function saveGist(){S.gist.url=gistUrl.value.trim();save();renderOverview();if(S.gist.url)refreshGist();}function importGistPaste(){try{const j=JSON.parse(gistPaste.value);if(applyFeed(j)){alert("✅ 已导入");gistPaste.value="";}}catch(e){alert("JSON 解析失败");}}function delTopic(id){S.topic=S.topic.filter(x=>x.id!==id);save();renderTopic();}function delRemix(id){S.remix=S.remix.filter(x=>x.id!==id);save();renderRemix();}function renderReview(){document.getElementById("reviewList").innerHTML=S.review.slice().reverse().map(r=>`
+<div class="list-item"><div class="body">
+<div class="tt">${esc(r.title)} <span class="small">${r.date}</span></div>
+<div class="meta">▶️ ${r.play||0} · 👍 ${r.like||0} · 💬 ${r.comment||0} · 🔁 ${r.share||0}</div>
+<div class="meta">✨ 亮点：${esc(r.hi||'—')}</div>
+<div class="meta">⚠️ 问题：${esc(r.pr||'—')}</div>
+<div class="meta">🔧 优化：${esc(r.op||'—')}</div></div>
+<button class="b red sm" onclick="delReview('${r.id}')">删</button></div>`).join("")||"<p class='small'>还没复盘记录</p>";}function addReview(){const title=rvTitle.value.trim();if(!title){alert("填个标题/主题");return;}S.review.push({id:uid(),date:rvDate.value||TODAY(),title,play:parseInt(rvPlay.value)||0,like:parseInt(rvLike.value)||0,comment:parseInt(rvCmt.value)||0,share:parseInt(rvShare.value)||0,hi:rvHi.value.trim(),pr:rvPr.value.trim(),op:rvOp.value.trim()});rvTitle.value="";rvPlay.value="";rvLike.value="";rvCmt.value="";rvShare.value="";rvHi.value="";rvPr.value="";rvOp.value="";save();renderReview();}function delReview(id){S.review=S.review.filter(x=>x.id!==id);save();renderReview();}function openModal(html){modal.innerHTML=html;mask.classList.add("show");}function closeModal(){mask.classList.remove("show");}mask.onclick=e=>{if(e.target===mask)closeModal();};(function(){var h=location.hash.slice(1);if(h){var b=document.querySelector('.nav-btn[data-sec="'+h+'"]');if(b){b.click();return;}}})();gistUrl.value=S.gist.url||DEFAULT_GIST||"";renderOverview();renderDaily();renderWeek();renderAccount();renderLove();renderInvest();renderTopic();renderRemix();renderReview();try{refreshGist();}catch(e){}</script>
+<script>if('serviceWorker'in navigator&&location.protocol.indexOf('http')===0){navigator.serviceWorker.register('./sw.js').catch(function(){});}</script>
+</body>
+</html>
